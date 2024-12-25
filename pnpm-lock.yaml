@@ -22,7 +22,7 @@ importers:
         version: 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(@types/node@22.10.2)(axios@1.7.9)(bufferutil@4.0.8)(fastestsmallesttextencoderdecoder@1.0.22)(handlebars@4.7.8)(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2)(utf-8-validate@5.0.10))(postcss@8.4.49)(react@18.3.1)(rollup@4.29.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)
       '@ai16z/client-direct':
         specifier: v0.1.4-alpha.3
-        version: 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(bufferutil@4.0.8)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)
+        version: 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)
       '@ai16z/client-discord':
         specifier: v0.1.4-alpha.3
         version: 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(bufferutil@4.0.8)(canvas@2.11.2)(ffmpeg-static@5.2.0)(handlebars@4.7.8)(onnxruntime-node@1.20.1)(puppeteer-core@19.11.1(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10))(puppeteer@19.11.1(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10))(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)
@@ -40,7 +40,7 @@ importers:
         version: 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)
       '@ai16z/plugin-image-generation':
         specifier: 0.1.4-alpha.3
-        version: 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(bufferutil@4.0.8)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)
+        version: 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)
       '@ai16z/plugin-node':
         specifier: v0.1.4-alpha.3
         version: 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(bufferutil@4.0.8)(canvas@2.11.2)(handlebars@4.7.8)(onnxruntime-node@1.20.1)(puppeteer-core@19.11.1(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10))(puppeteer@19.11.1(bufferutil@4.0.8)(typescript@5.7.2)(utf-8-validate@5.0.10))(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(zod@3.24.1)
@@ -53,6 +53,9 @@ importers:
       better-sqlite3:
         specifier: ^11.5.0
         version: 11.7.0
+      pm2:
+        specifier: ^5.4.3
+        version: 5.4.3(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       readline:
         specifier: ^1.3.0
         version: 1.3.0
@@ -4727,6 +4730,11 @@ packages:
     engines: {node: '>=12.0.0'}
     hasBin: true
 
+  pm2@5.4.3:
+    resolution: {integrity: sha512-4/I1htIHzZk1Y67UgOCo4F1cJtas1kSds31N8zN0PybO230id1nigyjGuGFzUnGmUFPmrJ0On22fO1ChFlp7VQ==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+
   pngjs-nozlib@1.0.0:
     resolution: {integrity: sha512-N1PggqLp9xDqwAoKvGohmZ3m4/N9xpY0nDZivFqQLcpLHmliHnCp9BuNCsOeqHWMuEEgFjpEaq9dZq6RZyy0fA==}
     engines: {iojs: '>= 1.0.0', node: '>=0.10.0'}
@@ -6324,7 +6332,7 @@ snapshots:
   '@ai16z/client-auto@0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(@types/node@22.10.2)(axios@1.7.9)(bufferutil@4.0.8)(fastestsmallesttextencoderdecoder@1.0.22)(handlebars@4.7.8)(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2)(utf-8-validate@5.0.10))(postcss@8.4.49)(react@18.3.1)(rollup@4.29.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)':
     dependencies:
       '@ai16z/eliza': 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(bufferutil@4.0.8)(handlebars@4.7.8)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)
-      '@ai16z/plugin-image-generation': 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(bufferutil@4.0.8)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)
+      '@ai16z/plugin-image-generation': 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)
       '@ai16z/plugin-solana': 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(@types/node@22.10.2)(axios@1.7.9)(bufferutil@4.0.8)(fastestsmallesttextencoderdecoder@1.0.22)(handlebars@4.7.8)(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2)(utf-8-validate@5.0.10))(postcss@8.4.49)(react@18.3.1)(rollup@4.29.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)
       '@ai16z/plugin-trustdb': 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(@types/node@22.10.2)(axios@1.7.9)(handlebars@4.7.8)(jsdom@25.0.1(bufferutil@4.0.8)(canvas@2.11.2)(utf-8-validate@5.0.10))(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)
       '@types/body-parser': 1.19.5
@@ -6383,10 +6391,10 @@ snapshots:
       - vue
       - yaml
 
-  '@ai16z/client-direct@0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(bufferutil@4.0.8)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)':
+  '@ai16z/client-direct@0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)':
     dependencies:
       '@ai16z/eliza': 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(bufferutil@4.0.8)(handlebars@4.7.8)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)
-      '@ai16z/plugin-image-generation': 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(bufferutil@4.0.8)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)
+      '@ai16z/plugin-image-generation': 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)
       '@types/body-parser': 1.19.5
       '@types/cors': 2.8.17
       '@types/express': 5.0.0
@@ -6409,7 +6417,6 @@ snapshots:
       - '@microsoft/api-extractor'
       - '@swc/core'
       - axios
-      - bufferutil
       - cheerio
       - encoding
       - handlebars
@@ -6424,7 +6431,6 @@ snapshots:
       - tsx
       - typeorm
       - typescript
-      - utf-8-validate
       - vue
       - yaml
 
@@ -6647,7 +6653,7 @@ snapshots:
       - vue
       - yaml
 
-  '@ai16z/plugin-image-generation@0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(bufferutil@4.0.8)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)':
+  '@ai16z/plugin-image-generation@0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(handlebars@4.7.8)(postcss@8.4.49)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)(yaml@2.6.1)':
     dependencies:
       '@ai16z/eliza': 0.1.4-alpha.3(@google-cloud/vertexai@1.9.0)(@langchain/core@0.3.26(openai@4.69.0(zod@3.24.1)))(axios@1.7.9)(bufferutil@4.0.8)(handlebars@4.7.8)(react@18.3.1)(sswr@2.1.0(svelte@5.2.4))(svelte@5.2.4)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.7.2))(whatwg-url@14.1.0)
       tsup: 8.3.5(postcss@8.4.49)(typescript@5.7.2)(yaml@2.6.1)
@@ -6666,7 +6672,6 @@ snapshots:
       - '@microsoft/api-extractor'
       - '@swc/core'
       - axios
-      - bufferutil
       - cheerio
       - encoding
       - handlebars
@@ -6681,7 +6686,6 @@ snapshots:
       - tsx
       - typeorm
       - typescript
-      - utf-8-validate
       - vue
       - yaml
 
@@ -12310,6 +12314,44 @@ snapshots:
     optional: true
 
   pm2@5.4.2(bufferutil@4.0.8)(utf-8-validate@5.0.10):
+    dependencies:
+      '@pm2/agent': 2.0.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
+      '@pm2/io': 6.0.1
+      '@pm2/js-api': 0.8.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)
+      '@pm2/pm2-version-check': 1.0.4
+      async: 3.2.6
+      blessed: 0.1.81
+      chalk: 3.0.0
+      chokidar: 3.6.0
+      cli-tableau: 2.0.1
+      commander: 2.15.1
+      croner: 4.1.97
+      dayjs: 1.11.13
+      debug: 4.4.0
+      enquirer: 2.3.6
+      eventemitter2: 5.0.1
+      fclone: 1.0.11
+      js-yaml: 4.1.0
+      mkdirp: 1.0.4
+      needle: 2.4.0
+      pidusage: 3.0.2
+      pm2-axon: 4.0.1
+      pm2-axon-rpc: 0.7.1
+      pm2-deploy: 1.0.2
+      pm2-multimeter: 0.1.2
+      promptly: 2.2.0
+      semver: 7.6.3
+      source-map-support: 0.5.21
+      sprintf-js: 1.1.2
+      vizion: 2.2.1
+    optionalDependencies:
+      pm2-sysmonit: 1.2.8
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+
+  pm2@5.4.3(bufferutil@4.0.8)(utf-8-validate@5.0.10):
     dependencies:
       '@pm2/agent': 2.0.4(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       '@pm2/io': 6.0.1
