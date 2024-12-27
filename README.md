@@ -1,4 +1,4 @@
-# Eliza
+# X-AI Agent built with Eliza
 
 ## Edit the character files
 
